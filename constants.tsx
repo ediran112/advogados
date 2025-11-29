@@ -87,6 +87,30 @@ export const TESTIMONIALS: Testimonial[] = [
     source: "Via Google",
     text: "Cheguei até ela por indicação, e com toda certeza também a indicarei. Profissional atenciosa, carismática e sempre atualizada.",
     avatar: "https://picsum.photos/100/100?random=4"
+  },
+  {
+    name: "Rafael Santos",
+    source: "Via Google",
+    text: "Profissionalismo ímpar. O processo de registro foi transparente e seguro. Recomendo a todos que buscam proteção para sua marca.",
+    avatar: "https://picsum.photos/100/100?random=5"
+  },
+  {
+    name: "Beatriz Costa",
+    source: "Via Google",
+    text: "Excelente atendimento! A Brenda esclareceu todos os pontos e me deixou muito tranquila durante todo o processo no INPI.",
+    avatar: "https://picsum.photos/100/100?random=6"
+  },
+  {
+    name: "Carlos Eduardo",
+    source: "Via Google",
+    text: "Serviço ágil e de confiança. A segurança jurídica que minha empresa precisava foi garantida com maestria.",
+    avatar: "https://picsum.photos/100/100?random=7"
+  },
+  {
+    name: "Fernanda Lima",
+    source: "Via Google",
+    text: "Muito satisfeita com o resultado. A Brenda é extremamente competente e dedicada. Minha marca agora está protegida!",
+    avatar: "https://picsum.photos/100/100?random=8"
   }
 ];
 
