@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brenda Prinsk | Advogada</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                gold: '#F9DBAB',
+                dark: '#1A1A1A',
+                darker: '#121212',
+                card: '#242424',
+                border: '#3D3D3D'
+              }
+            },
+            fontFamily: {
+              serif: ['Merriweather', 'serif'],
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            keyframes: {
+              marquee: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-50%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-15px)' },
+              },
+              typing: {
+                'from': { width: '0' },
+                'to': { width: '100%' },
+              },
+              blink: {
+                '50%': { borderColor: 'transparent' },
+              }
+            },
+            animation: {
+              marquee: 'marquee 30s linear infinite',
+              float: 'float 6s ease-in-out infinite',
+              typing: 'typing 3.5s steps(40, end) forwards, blink .75s step-end infinite',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #1A1A1A;
+        color: #ffffff;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1A1A1A;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #3D3D3D;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #F9DBAB;
+      }
+
+      /* --- Advanced Scroll Animations --- */
+      
+      /* Base state for animated elements */
+      .reveal-up, 
+      .reveal-left, 
+      .reveal-right, 
+      .reveal-scale {
+        opacity: 0;
+        transition: all 1s cubic-bezier(0.22, 1, 0.36, 1); /* Elegant easing */
+      }
+
+      /* Initial positions */
+      .reveal-up { transform: translateY(50px); }
+      .reveal-left { transform: translateX(-50px); }
+      .reveal-right { transform: translateX(50px); }
+      .reveal-scale { transform: scale(0.9); }
+
+      /* Active state (triggered by JS) */
+      .reveal-visible {
+        opacity: 1;
+        transform: translate(0) scale(1);
+      }
+
+      /* Stagger delays */
+      .delay-100 { transition-delay: 0.1s; }
+      .delay-200 { transition-delay: 0.2s; }
+      .delay-300 { transition-delay: 0.3s; }
+      .delay-400 { transition-delay: 0.4s; }
+      .delay-500 { transition-delay: 0.5s; }
+      .delay-700 { transition-delay: 0.7s; }
+
+      /* Typewriter Utility */
+      .typewriter-effect {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid #F9DBAB;
+        animation: typing 3s steps(40, end) forwards, blink 0.75s step-end infinite;
+        width: 0; /* Start hidden */
+        display: inline-block;
+        vertical-align: bottom;
+      }
+      
+      /* Mobile override for typewriter to prevent breaking */
+      @media (max-width: 768px) {
+        .typewriter-effect-multiline {
+           white-space: normal;
+           border-right: none;
+           animation: none;
+           width: auto;
+           opacity: 0;
+           animation: fadeIn 1s forwards 0.5s;
+        }
+        @keyframes fadeIn {
+          to { opacity: 1; }
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
